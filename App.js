@@ -24,7 +24,7 @@ export default function App() {
   }
 
   async function addTask() {
-    if (input.trim() === '') return; // Prevent adding empty tasks
+    if (input.trim() === '') return;
     const task = { id: Date.now(), name: input };
     const updatedTasks = [...tasks, task];
     setTasks(updatedTasks);
